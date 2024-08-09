@@ -1,0 +1,57 @@
+.menu_wrapper {
+    height: 80%;
+    position: relative;
+    margin-bottom: 10%;
+    margin-top: 10%;
+.first {
+    position: absolute;
+    top: 0;
+    transform: translateY(0%);
+    transition: all 1s;
+}
+.second {
+    position: absolute;
+    top: 0;
+    transform: translateY(100%);
+    transition: all 1s;
+}
+.third {
+    position: absolute;
+    top: 0;
+    transform: translateY(200%);
+    transition: all 1s;
+}
+    div {
+        margin: auto;
+        height: 33.3%;
+        align-content: center;
+        opacity: 0;
+        animation-name: fade-in;
+        animation-delay: 3s;
+        animation-duration: 10s;
+        animation-fill-mode: forwards;
+    }
+    button {
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+        font-size: 2.5cqw;
+        font-weight: 200;
+        color: slategray;
+        white-space: nowrap;
+    }
+    button:hover {
+        color: whitesmoke;
+        transform: scale(1.0125);
+    }
+}
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}

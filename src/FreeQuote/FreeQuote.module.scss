@@ -1,0 +1,68 @@
+.free_quote_input {
+    border: 1px solid whitesmoke;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    color: whitesmoke;
+    background-color: transparent;
+    width: 75%;
+    padding: 5px;
+    margin: auto;
+    margin-bottom: 1%;
+    outline: none;
+    border-radius: 0;
+    opacity: 0;
+    animation: fadeIn 5s forwards;
+
+}
+
+.free_quote_input:focus {
+    outline: none;
+}
+
+.free_quote_input:active {
+    outline: none;
+    background-color: transparent;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px darkslategrey inset !important;
+    -webkit-text-fill-color: whitesmoke;
+    border: 1px solid darkslategray;
+    border-bottom: 1px solid whitesmoke;
+}
+
+.submit_btn {
+    border: 1px solid whitesmoke;
+    outline: none;
+    color: darkslategray;
+    width: 33%;
+    border-radius: 16px;
+    background-color: whitesmoke;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+.submit_btn:hover {
+    border: 1px solid whitesmoke;
+    outline: none;
+    background-color: slategray;
+    width: 33%;
+    border-radius: 16px;
+    color: whitesmoke;
+    cursor: pointer;
+    margin-top: 1rem;
+    box-shadow: rgb(47, 37, 65) 0px 24px 48px 0px;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

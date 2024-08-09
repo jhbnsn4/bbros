@@ -1,0 +1,91 @@
+.logo_main {
+    color: whitesmoke;
+    visibility: hidden;
+    background-color: transparent;
+    width: fit-content;
+    height: fit-content;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-delay: 2s;
+    font-size: 14cqw;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    animation-name: bensonbrothers-bb;
+    -webkit-animation-name: bensonbrothers-bb;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    cursor: pointer;
+    z-index: 0;
+
+}
+
+.logo_sub {
+    position: absolute;
+    visibility: hidden;
+    top: 50%;
+    left: 50%;
+    background-color: whitesmoke;
+    color: rgb(35, 54, 54);
+    height: fit-content;
+    width: fit-content;
+    font-size: 2cqw;
+    letter-spacing: .45cqw;
+    white-space: nowrap;
+    animation: bensonbrothers 1s ease-in-out;
+    -webkit-animation: bensonbrothers 1s ease-in-out;
+    -webkit-animation-delay: 2.75s;
+    animation-delay: 2.75s;
+    border-radius: 20px;
+    font-weight: 400;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    padding: 2px;
+    box-shadow: 1px 10px 3px rgb(35, 54, 54, .25);
+    text-shadow: none;
+    
+}
+@-webkit-keyframes bensonbrothers {
+    0% {
+        transform: translate(80%, -80%);
+    }
+
+    100% {
+        transform: translate(-41%, -55%);
+        visibility: visible;
+    }
+}
+
+@-webkit-keyframes bensonbrothers-bb {
+    0% {
+        visibility: visible;
+        transform: rotateY(360deg);
+        }
+
+    100% {
+        visibility: visible;
+    }
+
+}
+@keyframes bensonbrothers {
+    0% {
+        transform: translate(80%, -80%);
+    }
+
+    100% {
+        transform: translate(-41%, -55%);
+        visibility: visible;
+    }
+}
+
+@keyframes bensonbrothers-bb {
+    0% {
+        visibility: visible;
+        transform: rotateY(360deg);
+        }
+
+    100% {
+        visibility: visible;
+    }
+
+}
