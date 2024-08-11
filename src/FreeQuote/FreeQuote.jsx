@@ -14,14 +14,14 @@ const FreeQuote = () => {
             <input
                 value={name}
                 onChange={(e) => setName(e.target.value)}
-                style={{ fontSize: name ? '3cqh' : '1.5cqh' }}
+                style={{ fontSize: name ? '3cqh' : '2cqh' }}
                 placeholder='Name'
                 className={classes.free_quote_input}
             />
             <input
                 value={number}
                 onChange={(e) => setNumber(e.target.value)}
-                style={{ fontSize: number ? '3cqh' : '1.5cqh' }}
+                style={{ fontSize: number ? '3cqh' : '2cqh' }}
                 required
                 type='tel'
                 pattern='[0-9] {3}-[0-9]{3}-[0-9]{4}'
@@ -31,25 +31,25 @@ const FreeQuote = () => {
             <input
                 value={address}
                 onChange={(e) => setAddress(e.target.value)}
-                style={{ fontSize: address ? '3cqh' : '1.5cqh' }}
+                style={{ fontSize: address ? '3cqh' : '2cqh' }}
                 placeholder='Address'
                 className={classes.free_quote_input}
             />
             <p style={{ fontSize: '12px' }}>Your Best Guess.</p>
             <div style={{ display: 'inline-flex', cursor: 'pointer', alignItems: 'baseline', width: '55%', justifyContent: 'space-between' }}>
                 <div><BsTreeFill onClick={() => setSize('small')} color={size === 'small' ? '#98FF98' : 'whitesmoke'} size={8} />
-                    <p onClick={() => setSize('small')} style={{ fontSize: '10px', color: size === 'small' ? '#98FF98' : 'whitesmoke' }}>Small</p>
+                    <p onClick={() => setSize('small')} style={{ fontSize: '2cqh', color: size === 'small' ? '#98FF98' : 'whitesmoke' }}>Small</p>
                 </div>
                 <div>
                     <BsTreeFill onClick={() => setSize('medium')} color={size === 'medium' ? '#98FF98' : 'whitesmoke'} size={16} />
-                    <p onClick={() => setSize('medium')} style={{ fontSize: '10px', color: size === 'medium' ? '#98FF98' : 'whitesmoke' }}>Medium</p>
+                    <p onClick={() => setSize('medium')} style={{ fontSize: '2cqh', color: size === 'medium' ? '#98FF98' : 'whitesmoke' }}>Medium</p>
                 </div>
                 <div>
                     <BsTreeFill onClick={() => setSize('large')} color={size === 'large' ? '#98FF98' : 'whitesmoke'} size={24} />
-                    <p onClick={() => setSize('large')} style={{ fontSize: '10px', color: size === 'large' ? '#98FF98' : 'whitesmoke' }}>Large</p>
+                    <p onClick={() => setSize('large')} style={{ fontSize: '2cqh', color: size === 'large' ? '#98FF98' : 'whitesmoke' }}>Large</p>
                 </div>
             </div>
-            <p style={{ fontSize: '12px' }}>Will the tree fall on anything?</p>
+            <p style={{ fontSize: '2cqh' }}>Will the tree fall on anything?</p>
             <RadioGroup
                 aria-labelledby="demo-radio-buttons-group-label"
                 name="radio-buttons-group"
