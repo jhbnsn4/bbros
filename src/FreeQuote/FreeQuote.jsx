@@ -60,17 +60,17 @@ const FreeQuote = () => {
                 <FormControlLabel
                     value="yes"
                     control={<Radio checked={obstructed === 'yes'} sx={{ '& .MuiSvgIcon-root': { fontSize: 8, color: 'whitesmoke' }, }} />}
-                    label={<span style={{ fontSize: '2cqh' }}>Yes</span>}
+                    label={<span style={{ fontSize: '1.5cqh' }}>Yes</span>}
                 />
                 <FormControlLabel
                     value="maybe"
                     control={<Radio checked={obstructed === 'maybe'} sx={{ '& .MuiSvgIcon-root': { fontSize: 8, color: 'whitesmoke' }, }} />}
-                    label={<span style={{ fontSize: '2cqh' }}>Not Sure</span>}
+                    label={<span style={{ fontSize: '1.5cqh' }}>Not Sure</span>}
                 />
                 <FormControlLabel
                     value="no"
                     control={<Radio checked={obstructed === 'no'} sx={{ '& .MuiSvgIcon-root': { fontSize: 8, color: 'whitesmoke' }, }} />}
-                    label={<span style={{ fontSize: '2cqh' }}>No</span>}
+                    label={<span style={{ fontSize: '1.5cqh' }}>No</span>}
                 />
             </RadioGroup>
             <div>
